@@ -5,6 +5,9 @@ class Book:
     # TODO: double-underscore properties are hidden from other classes
 
     # TODO: create a class method
+    @classmethod
+    def get_book_types(cls):
+        return cls.BOOK_TYPES
 
     # TODO: create a static method
 
