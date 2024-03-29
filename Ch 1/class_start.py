@@ -10,9 +10,9 @@ class Book:
         return cls.BOOK_TYPES
 
     # TODO: create a static method
-    def getbooklist():
+    def get_booklist():
         if Book.__booklist == None:
-            Book.__list = []
+            Book.__booklist = []
         return Book.__booklist
 
     # instance methods receive a specific object instance as an argument
@@ -35,9 +35,11 @@ print("Book types: ", Book.get_book_types())
 
 # TODO: Create some book instances
 b1 = Book("Titlel", "HARDCOVER")
-b2 = Book("Tittel", "COMIC")
+b2 = Book("Tittel", "PAPERBACK")
 
 
 # TODO: Use the static method to access a singleton object
-
-
+thebooks = Book.get_booklist()
+thebooks.append(b1)
+thebooks.append(b2)
+print(thebooks)
