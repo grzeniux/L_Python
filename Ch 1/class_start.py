@@ -16,8 +16,9 @@ class Book:
     def set_title(self, newtitle):
         self.title = newtitle
 
-    def __init__(self, title):
+    def __init__(self, title, booktype):
         self.title = title
+
         if (not booktype in Book.BOOK_TYPES):
             raise ValueError(f"{booktype} is not a valid book type")
         else:
@@ -26,7 +27,7 @@ class Book:
 
 
 # TODO: access the class attribute
-
+print("Book types: ", Book.get_book_types())
 
 # TODO: Create some book instances
 b1 = Book("Titlel", "HARDCOVER")
