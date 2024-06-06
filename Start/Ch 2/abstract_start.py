@@ -27,8 +27,6 @@ class Square(GraphicShape):
     def calc_area(self):
         return self.side * self.side
 
-#g = GraphicShape()
-
 c = Circle(10)
 print(c.calc_area())
 s = Square(12)
