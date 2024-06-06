@@ -1,11 +1,16 @@
 # Python Object Oriented Programming by Joe Marini course example
 # Understanding class inheritance
 
-
-class Book:
-    def __init__(self, title, author, pages, price):
+class Publication:
+    def __init(self,title,price):
         self.title = title
         self.price = price
+
+
+
+class Book(Publication):
+    def __init__(self, title, author, pages, price):
+        super().__init__(title,price)
         self.author = author
         self.pages = pages
 
