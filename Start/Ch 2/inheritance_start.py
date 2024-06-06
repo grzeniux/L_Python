@@ -2,10 +2,9 @@
 # Understanding class inheritance
 
 class Publication:
-    def __init(self,title,price):
+    def __init__(self,title,price):
         self.title = title
         self.price = price
-
 
 
 class Book(Publication):
